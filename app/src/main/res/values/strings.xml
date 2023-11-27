@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="home">Ana Sayfa</string>
+    <string name="login">Giriş</string>
+    <string name="content1">Content1</string>
+    <string name="content2">Content2</string>
+    <string name="content3">Content3</string>
+    <string name="content4">Content4</string>
+</resources>
