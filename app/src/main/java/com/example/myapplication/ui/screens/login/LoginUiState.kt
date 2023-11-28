@@ -1,5 +1,10 @@
 package com.example.myapplication.ui.screens.login
 
-class LoginUiState {
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 
+class LoginUiState() {
+    var emailField by mutableStateOf("")
+    var passwordField by mutableStateOf("")
 }

@@ -53,14 +53,11 @@ fun MyApp(navController: NavHostController = rememberNavController()) {
             startDestination = MyAppScreens.Login.name
         ) {
             composable(route = MyAppScreens.Login.name) {
-                LoginScreen {
+                LoginScreen(onPressedSignInButton = {
                     navController.navigate(MyAppScreens.Home.name) {
                         popUpTo(0)
-                        val database = Firebase.database
-                        val myRef = database.getReference("message")
-                        myRef.setValue("Hello, World!")
                     }
-                }
+                })
             }
 
             composable(route = MyAppScreens.Home.name) {
